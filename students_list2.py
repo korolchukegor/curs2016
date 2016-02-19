@@ -21,35 +21,6 @@ for i in s:
         if i.find('р') > 0:
                 col += 1
 print(col)
-#Пункт 5
-"""fullname = 0
-names = []
-names2 = []
-s1 = set()
-group = []
-names1 = []
-i = 0
-for fullname in s:
-    Name = fullname[:fullname.find(' ')] #Выделяем имена
-    names.append(Name) #Список имен
-    for Name in names:
-        while Name != names[i:i + 1]:
-        i += 1
-        print(Name)
-
-
-for Name in names:    
-    if names.count(Name) >= 2:
-        if Name in names:
-            s1.add(Name)
-            s2 = list(s1)
-for Name in s2:
-    for fullname in s:
-        if Name in fullname:
-            group.append(fullname)
-
-print(group)"""
-#Выводит список студентов, имена которых совпадают
 
 
 
