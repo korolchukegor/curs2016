@@ -4,7 +4,9 @@ import os, sys
 def search_word(word, dirr):
 	try:
 		for file in os.listdir(dirr):
-			#print(os.path.abspath(dirr), file, os.path.isdir(file), repr(file))
+			file = os.path.join(dirr, file)
+			#print(file)
+			#print(os.path.abspath(dirr), file, os.path.isdir(file))
 			if not os.path.isdir(os.path.abspath(file)):
 				if word in file:
 					spis[file] = os.path.abspath(file)
